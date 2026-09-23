@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f5f6f8;
+        }
+
+        /* Main container */
+        .fullpage-box {
+            display: flex;
+            min-height: 100vh;
+            padding: 10px;
+            gap: 10px;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 220px;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 15px;
+        }
+
+        /* Logo */
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        #logo_image {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+        }
+
+        .logo p {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        /* Sidebar buttons */
+        .sidebarbuttons {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .sidebutton {
+            padding: 12px;
+            background-color: #f1f2f4;
+            border: none;
+            border-radius: 6px;
+            text-align: left;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .sidebutton:hover {
+            background-color: #e2e4e8;
+        }
+
+        /* Dashboard */
+        .dashboard {
+            flex: 1;
+        }
+
+        /* Header */
+        .DashboardHeader {
+            height: 80px;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            margin-bottom: 15px;
+        }
+
+        .DashboardHeader h2 {
+            font-size: 24px;
+        }
+
+        /* Analytics section */
+        .analytics {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        /* Cards */
+        .analyticscard {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            width: calc(50% - 8px);
+            height: 200px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+
+        .analyticscard:hover {
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .analyticscard h1 {
+            font-size: 22px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="fullpage-box">
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+
+            <div class="logo">
+               
+                <p>Logo</p>
+            </div>
+
+            <div class="sidebarbuttons">
+                <button class="sidebutton">Dashboard</button>
+                <button class="sidebutton">Analytics</button>
+                <button class="sidebutton">Users</button>
+                <button class="sidebutton">Reports</button>
+                <button class="sidebutton">Settings</button>
+            </div>
+
+        </div>
+
+
+        <!-- Dashboard -->
+        <div class="dashboard">
+
+            <div class="DashboardHeader">
+                <h2>Dashboard</h2>
+            </div>
+
+
+            <div class="analytics">
+
+                <div class="analyticscard">
+                    <h1>Card 1</h1>
+                </div>
+
+                <div class="analyticscard">
+                    <h1>Card 2</h1>
+                </div>
+
+                <div class="analyticscard">
+                    <h1>Card 3</h1>
+                </div>
+
+                <div class="analyticscard">
+                    <h1>Card 4</h1>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+```
