@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spider-Man</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    }
+
+body{
+    background:#000;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* Hero */
+
+.hero{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:90px;
+    letter-spacing:8px;
+}
+
+.hero h2{
+    color:red;
+    font-size:40px;
+    margin-top:10px;
+    letter-spacing:5px;
+}
+
+/* Sticky Images */
+
+.card{
+    position:sticky;
+    top:0;
+    height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:black;
+}
+
+.card img{
+    width:80%;
+    height:85%;
+    object-fit:cover;
+    border-radius:20px;
+    box-shadow:0 20px 50px rgba(0,0,0,.7);
+}
+
+/* Each image overlaps the previous one */
+
+.card:nth-child(1){ z-index:1; }
+.card:nth-child(2){ z-index:2; }
+.card:nth-child(3){ z-index:3; }
+.card:nth-child(4){ z-index:4; }
+.card:nth-child(5){ z-index:5; }
+</style>
+</head>
+<body>
+    <section class="hero">
+        <h1>SPIDER MAN</h1>
+    </section>
+
+    <section class="cards">
+
+        <div class="card">
+            <img src="C:\Users\Hp\Downloads\images1.jpe" alt="">
+        </div>
+
+        <div class="card">
+            <img src="C:\Users\Hp\Downloads\images2.jpe" alt="">
+        </div>
+
+        <div class="card">
+            <img src="C:\Users\Hp\Downloads\images3.jpe" alt="">
+        </div>
+
+        <div class="card">
+            <img src="C:\Users\Hp\Downloads\MV5BOWNjYWM3NWItOGE0ZS00MWRjLThiZWEtYjc4ZmNmMmU5ZTVmXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="/">
+        </div>
+
+        <div class="card">
+            <img src="C:\Users\Hp\Downloads\images5.jpe" alt="">
+        </div>
+    </section>
+
+</body>
+</html>
