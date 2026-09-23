@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Login Card</title>
+    <style>
+       
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f5f7fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+       
+        .login-card {
+            width: 360px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+            padding: 40px;
+            border: 1px solid #e1e8ed;
+            align-items: center;
+        }
+
+        
+        .login-card h2 {
+            margin: 0 0 24px 0;
+            color: #333333;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        .login-card label{
+            text-align: center;
+        }
+      
+     
+        .login-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            margin-top: 10px;
+        }
+
+      
+        .login-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-card">
+        <h2>LOGIN PAGE</h2>
+        
+            <div class="form-group">    
+                <label for="username">Username</label><br/>
+                <input type="text" id="username" placeholder="Enter your username" required>
+            </div>
+            <div class="form-group">   
+                <label for="password">Password</label><br/>
+                <input type="password" id="password" placeholder="Enter your password" required>
+            </div>
+            <button type="submit" class="login-btn">Log In</button>
+        
+    </div>
+
+</body>
+</html>
