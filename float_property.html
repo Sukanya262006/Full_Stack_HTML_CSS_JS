@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float Layout</title>
+
+    <style>
+        body{
+            background-color: rgb(218, 231, 241);
+
+        }
+           .container {
+            width: 90%;
+            margin: 100px auto;
+            border-radius: 15px;
+            background-color: white;
+            padding: 20px;
+            overflow: auto;
+            align-items: center;
+            box-shadow: 1px 1px 5px 0px blue;
+        }
+        #div1 {
+            height: 300px;
+            width: 300px;
+            float: left;
+           
+        }
+
+        #div3 {
+            height: 300px;
+            width: 300px;
+            float: right;
+            
+        }
+
+        #div2 {
+            margin-left: 170px;
+            margin-right: 170px;
+           text-align: center;
+        }
+
+        .img {
+            height: 300px;
+            width: 300px;
+            filter:drop-shadow(1px 1px 3px grey)
+        }
+        h2{
+            text-shadow: 1px 1px 3px red;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <div id="div1">
+        <img class="img" src="C:\Users\Hp\Downloads\image1.jpe">
+    </div>
+
+    <div id="div3">
+        <img class="img" src="C:\Users\Hp\Downloads\image3.jpe">
+    </div>
+
+    <div id="div2">
+        <h2>Manali</h2>
+        <p>
+           Manali is a high-altitude Himalayan resort town in India’s northern Himachal Pradesh state. It has a reputation as a backpacking center. Set on the Beas River, it’s a gateway for skiing in the Solang Valley and trekking in Parvati Valley. It's also a jumping-off point for paragliding, rafting and mountaineering in the Pir Panjal mountains, home to 4,000m-high Rohtang Pass.
+        </p>
+    </div>
+</div>
+
+</body>
+</html>
