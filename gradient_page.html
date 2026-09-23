@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gradient Website</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: black;
+
+           
+
+            min-height: 100vh;
+            color: white;
+        }
+
+        header {
+            padding: 25px;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .container {
+            padding: 60px 20px;
+        }
+
+        h1 {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 250px;
+            height: 250px;
+            border-radius: 20px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .radial {
+            background: radial-gradient(
+                circle,
+                white,
+                #f1da7a,
+                rgb(255, 187, 0),
+                #f97316
+            );
+        }
+
+        .conic {
+            background: conic-gradient(
+                #22c55e,
+                #14b8a6,
+                #3b82f6,
+                #14b8a6
+                #22c55e
+            );
+        }
+
+        .linear {
+            background: linear-gradient(
+                #769ef4,
+                rgb(49, 88, 245),
+                #370097
+            );
+        }
+
+        .card h2 {
+            margin-bottom: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <h1> Gradients</h1>
+
+        <div class="cards">
+
+            <div class="card linear">
+                <h2>Linear</h2>
+                <p>Blue → Purple</p>
+            </div>
+
+            <div class="card radial">
+                <h2>Radial</h2>
+                <p>Yellow → Orange</p>
+            </div>
+
+            <div class="card conic">
+                <h2>Conic</h2>
+                <p>Green → Teal → Blue</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
