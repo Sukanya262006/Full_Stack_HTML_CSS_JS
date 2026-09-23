@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*button{
+            color:white;
+            background-color: black;
+            border-width:0px;
+            font-size:40px;
+        }
+        button:hover{
+            box-shadow: 3px 3px 5px grey;
+        }
+        button:active{
+            box-shadow: 0px 0px 0px ;
+            background-color: grey;
+        }
+        button:focus{
+            outline:3px solid grey;
+        }
+        input[type=checkbox]{
+            height:25px;
+            width:25px;
+        }
+        input:checked{
+            box-shadow: 3px 3px 5px grey;
+            accent-color:red;
+        }
+        a{
+            font-size: 40px;
+        }
+        a:link{
+            color:red;
+        }
+        a:visited{
+            color:blue;
+        }*/
+        input{
+            border-width:0 0 2px 0;
+            font-size:40px;
+            border-color:black;
+        }
+        input:required{
+            border-color:olivedrab;
+        }
+        input:optional{
+            border-color:red;
+
+        }
+        input:disabled{
+            background-color: transparent;
+            border-color:grey;
+            color:white;
+        }
+        input:in-range{
+            color:pink;
+
+        }
+        input:out-of-range{
+            color:rgb(242, 121, 242);
+        }
+        div:has(h1){
+            background-color: black;
+            color:white;
+        }
+        div:not(:has(h1)){
+            background-color: violet;
+        }
+        div:has(h2){
+
+        }
+
+    </style>
+</head>
+<body>
+    <button >Click me</button></br>
+    <input type="checkbox"></br>
+    <a href="#6">LINK</a>
+    <a href="#63">LINK</a>
+    <a href="#61">LINK</a><br/>
+    <form>
+        <input type="text" placeholder="First Name" required><br/><br/>
+        <input type="text" placeholder="Middle Name"><br/><br/>
+        <input type="text" placeholder="Last Name" required><br/><br/>
+        <input type="text" placeholder="Mathura" disabled><br/><br/>
+        <input type="text" placeholder="submit" required><br/><br/>
+        <input type="number" placeholder="enter a number" min="10" max="100"><br/><br/>
+    </form>
+    <div>
+        <h1>Heading 1</h1>
+    </div>
+    <div>
+        <h2>Heading 2</h2>
+    </div>
+    <div>
+        <
+    </div>
+
+
+</body>
+</html>
