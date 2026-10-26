@@ -1,0 +1,108 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(135deg, #1e1b4b, #4338ca);
+  color: #1f2937;
+  padding: 16px;
+}
+
+.card {
+  width: 100%;
+  max-width: 640px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+h1 { margin: 0 0 16px; text-align: center; color: #4338ca; }
+h2 { margin: 16px 0; font-size: 1.2rem; }
+
+.hidden { display: none !important; }
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+#timer.low { color: #dc2626; }
+
+.progress-track {
+  height: 8px;
+  background: #e5e7eb;
+  border-radius: 4px;
+  overflow: hidden;
+}
+#progress-fill {
+  height: 100%;
+  width: 0;
+  background: #4338ca;
+  transition: width 0.3s;
+}
+
+#options { display: grid; gap: 10px; }
+
+.option {
+  text-align: left;
+  padding: 12px 14px;
+  font-size: 1rem;
+  border: 2px solid #d1d5db;
+  border-radius: 10px;
+  background: #f9fafb;
+  cursor: pointer;
+  transition: 0.15s;
+}
+.option:hover:not(:disabled) { border-color: #4338ca; background: #eef2ff; }
+.option:disabled { cursor: not-allowed; }
+.option.correct { background: #22c55e; border-color: #16a34a; color: #fff; }
+.option.wrong   { background: #ef4444; border-color: #dc2626; color: #fff; }
+.option.locked  { opacity: 0.6; }
+
+#explanation {
+  margin-top: 14px;
+  padding: 12px;
+  background: #eef2ff;
+  border-left: 4px solid #4338ca;
+  border-radius: 6px;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background: #4338ca;
+  color: #fff;
+  cursor: pointer;
+}
+.btn:hover:not(:disabled) { background: #3730a3; }
+.btn:disabled { background: #9ca3af; cursor: not-allowed; }
+.btn.secondary { background: #e5e7eb; color: #1f2937; }
+.btn.secondary:hover { background: #d1d5db; }
+
+#result-screen { text-align: center; }
+.big { font-size: 2rem; font-weight: 700; margin: 8px 0; }
+
+.review-item {
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+.review-item p { margin: 4px 0; }
+.review-item .yours   { color: #dc2626; }
+.review-item .right   { color: #16a34a; }
