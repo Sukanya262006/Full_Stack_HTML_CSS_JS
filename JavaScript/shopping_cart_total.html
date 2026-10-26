@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart Total</title>
+</head>
+<body>
+    <h1>Shopping Cart Total</h1>
+    <p id="total"></p>
+
+    <script>
+        const itemPrices = [25, 40, 15.5, 30];
+        const total = itemPrices.reduce((sum, price) => sum + price, 0);
+
+        document.getElementById("total").textContent = `Total: $${total.toFixed(2)}`;
+    </script>
+</body>
+</html>
