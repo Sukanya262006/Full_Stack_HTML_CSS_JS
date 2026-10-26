@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="val1">
+    <input type="text" id="val2">
+    <button onclick="addObjects()">Add</button>
+    <p id="result">0</p>
+
+    <script>
+        function addObjects(){
+            var val1 = parseInt(document.getElementById("val1").value);
+            var val2 = parseInt(document.getElementById("val2").value);
+            
+            document.getElementById("result").textContent=val1+val2;
+        }
+    </script>
+</body>
+</html>

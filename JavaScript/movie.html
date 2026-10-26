@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Finder</title>
+</head>
+<body>
+    <h2>Find a 5-Star Movie</h2>
+    <button onclick="findMovie()">Find Movie</button>
+    <p id="result"></p>
+
+    <script>
+        function findMovie() {
+            let movies = [
+                { title: "Inception", rating: 4 },
+                { title: "Interstellar", rating: 5 },
+                { title: "Titanic", rating: 4 },
+                { title: "Avatar", rating: 5 }
+            ];
+
+            let movie = movies.find(function(m) {
+                return m.rating === 5;
+            });
+
+            document.getElementById("result").innerHTML =
+                movie.title;
+        }
+    </script>
+</body>
+</html>

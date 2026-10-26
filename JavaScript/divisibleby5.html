@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Numbers Divisible by 5</title>
+</head>
+<body>
+    <h2>Numbers Divisible by 5</h2>
+    <button onclick="showNumbers()">Show Numbers</button>
+    <p id="result"></p>
+
+    <script>
+        function showNumbers() {
+            let output = "";
+
+            for (let i = 1; i <= 50; i++) {
+                if (i % 5 === 0) {
+                    output += i + " ";
+                }
+            }
+
+            document.getElementById("result").innerHTML = output;
+        }
+    </script>
+</body>
+</html>
