@@ -1,3 +1,0 @@
-  #pitch { position: relative; width: 200px; height: 300px; background: tan; }
-  #zone { position: absolute; width: 200px; top: 220px; height: 40px; background: lightgreen; }
-  #ball { position: absolute; left: 90px; top: 0; width: 20px; height: 20px; background: red; border-radius: 10px; }
